@@ -1,5 +1,8 @@
 package Task_2;
 
-public class JournalLog {
+import java.util.Collection;
 
+public class JournalLog {
+    Collection<OperationsDictionary> operationsDictionaries;
+    Collection<Emitent> emitentOperations;
 }
