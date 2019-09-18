@@ -23,6 +23,7 @@ public class HotOrCold {
             if (current == result) {
                 System.out.println("Успех");
                 break;
+            //dt - имеет смысл зарефакторить, чтобы код читался
             } else if (Math.abs(result - prev) >= (Math.abs(result - current))) {
                 System.out.println("Горячо");
             } else if (Math.abs(result - prev) < (Math.abs(result - current))) {
