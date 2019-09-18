@@ -1,18 +1,12 @@
 package Task_3;
 
-class Account {
-    String type;
-    private double balance= 10000.30;
+interface Account {
 
-    void putMoney(double amount) {
-        this.balance = this.balance + amount;
-    }
+    void putMoney(double amount);
 
-    void withdrawMoney(double amount) {
-        this.balance = this.balance - amount;
-    }
+    void withdrawMoney(double amount);
 
-    double getBalance() {
-        return balance;
-    }
+    double getBalance();
+
+
 }

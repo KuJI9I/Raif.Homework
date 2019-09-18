@@ -1,6 +1,8 @@
 package Task_2;
 
-public class Promo {
+import java.util.Collection;
 
+public class Promo {
+    Collection<Emitent> emitents;
 
 }

@@ -3,6 +3,7 @@ package Task_2;
 import java.util.Collection;
 
 public class Emitent {
-    Collection<Promo> promos;
+    Collection<JournalLog> logs;
+    Collection<Market> markets;
 
 }

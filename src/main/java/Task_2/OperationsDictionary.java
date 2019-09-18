@@ -1,5 +1,7 @@
 package Task_2;
 
-public class OperationsDictionary {
+import java.util.Collection;
 
+public class OperationsDictionary {
+    Collection<JournalLog> logs;
 }

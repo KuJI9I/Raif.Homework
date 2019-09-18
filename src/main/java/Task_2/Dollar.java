@@ -1,6 +1,8 @@
 package Task_2;
 
 
-public class Dollar {
+import java.util.Collection;
 
+public class Dollar {
+    Collection<Emitent> markets;
 }
