@@ -1,4 +1,4 @@
-package Task_5;
+package NaymushinIgor.javaCore.Task_5;
 
 import java.util.Scanner;
 
@@ -73,7 +73,8 @@ public class Calculator {
                     result = num1 / num2;
                 } catch (Exception e) {
                     System.out.println("Деление на ноль");
-                    result = num1 / getInt();
+                    throw new ArithmeticException();
+//                    result = num1 / getInt();
                 }
 
                 break;

@@ -1,4 +1,4 @@
-package Task_2;
+package NaymushinIgor.javaCore.Task_2;
 
 
 import java.util.Collection;

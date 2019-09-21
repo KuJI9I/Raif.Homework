@@ -1,4 +1,4 @@
-package Task_4;
+package NaymushinIgor.javaCore.Task_4;
 
 public class Moon {
 
@@ -24,6 +24,7 @@ public class Moon {
             sum += currentValue;
         }
         System.out.println("Сумма = " + sum);
+
         return (sum % 10 == 0);
     }
 

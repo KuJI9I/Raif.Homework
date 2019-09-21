@@ -1,4 +1,4 @@
-package Task_3;
+package NaymushinIgor.javaCore.Task_3;
 
 interface Account {
 

@@ -1,4 +1,4 @@
-package Task_1;
+package NaymushinIgor.javaCore.Task_1;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -13,22 +13,28 @@ public class HotOrCold {
         int min = scanner.nextInt();
         System.out.println("Введите второе число ");
         int max = scanner.nextInt();
-        int result = random.nextInt((max - min) + 1) + min;
+        int targetValue = random.nextInt((max - min) + 1) + min;
         System.out.println("Перейдем к игре");
-        System.out.println("Случайное число = " + result);
+        System.out.println("Случайное число = " + targetValue);
         int prev = min;
         while (true) {
             System.out.println("Введите число ");
-            int current = scanner.nextInt();
-            if (current == result) {
+            int enteredNumber = scanner.nextInt();
+            if (enteredNumber == targetValue) {
                 System.out.println("Успех");
                 break;
-            } else if (Math.abs(result - prev) >= (Math.abs(result - current))) {
-                System.out.println("Горячо");
-            } else if (Math.abs(result - prev) < (Math.abs(result - current))) {
-                System.out.println("Холодно");
+            } else {
+                int prevDistance = Math.abs(targetValue - prev);
+                int currentDistance = Math.abs(targetValue - enteredNumber);
+                if (prevDistance >= currentDistance) {
+                    System.out.println("Горячо");
+                } else {
+                    System.out.println("Холодно");
+                }
             }
-            prev = current;
+            prev = enteredNumber;
         }
     }
+
+
 }

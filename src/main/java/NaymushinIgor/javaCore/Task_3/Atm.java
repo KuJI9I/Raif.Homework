@@ -1,4 +1,4 @@
-package Task_3;
+package NaymushinIgor.javaCore.Task_3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 public class Atm {
 
     private List<Rule> rules = new ArrayList<Rule>();
+
 
     public static void main(String[] args) {
         Atm atm = new Atm();
@@ -23,6 +24,9 @@ public class Atm {
     boolean checkAll(User user, Account from, Account to, double amount) {
         for (Rule item : rules) {
             if (!item.check(user, null, to, amount)) {
+                return false;
+            }
+            if (!item.check(user, from, to, amount)){
                 return false;
             }
         }
