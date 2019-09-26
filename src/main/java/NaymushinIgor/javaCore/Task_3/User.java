@@ -1,19 +1,30 @@
 package NaymushinIgor.javaCore.Task_3;
 
-import NaymushinIgor.javaCore.Task_3.accounts.Account;
-
-import java.util.Collections;
-import java.util.List;
+import NaymushinIgor.javaCore.Task_3.accounts.CreditAccount;
+import NaymushinIgor.javaCore.Task_3.accounts.CurrentAccount;
+import NaymushinIgor.javaCore.Task_3.accounts.DebitAccount;
 
 public class User {
-    private int id;
-    private List<Account> accounts;
+    private CreditAccount creditAccount;
+    private CurrentAccount currentAccount;
+    private DebitAccount debitAccount;
 
-    public List<Account> getAccounts() {
-        return Collections.unmodifiableList(accounts);
+
+    public User(CreditAccount creditAccount, CurrentAccount currentAccount, DebitAccount debitAccount) {
+        this.creditAccount = creditAccount;
+        this.currentAccount = currentAccount;
+        this.debitAccount = debitAccount;
     }
 
-    public void setAccounts(List<Account> accounts) {
-        this.accounts = accounts;
+    public CreditAccount getCreditAccount() {
+        return creditAccount;
+    }
+
+    public CurrentAccount getCurrentAccount() {
+        return currentAccount;
+    }
+
+    public DebitAccount getDebitAccount() {
+        return debitAccount;
     }
 }
