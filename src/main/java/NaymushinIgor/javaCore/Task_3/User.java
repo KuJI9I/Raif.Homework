@@ -1,71 +1,19 @@
 package NaymushinIgor.javaCore.Task_3;
 
-import java.util.Collection;
+import NaymushinIgor.javaCore.Task_3.accounts.Account;
+
+import java.util.Collections;
+import java.util.List;
 
 public class User {
     private int id;
-    private Collection<DebitAccount> debits;
-    private Collection<CreditAccount> credits;
-    private Collection<CurrentAccount> currents;
+    private List<Account> accounts;
 
-    DebitAccount debitAccount;
-    CreditAccount creditAccount;
-    CurrentAccount currentAccount;
-
-    public int getId() {
-        return id;
+    public List<Account> getAccounts() {
+        return Collections.unmodifiableList(accounts);
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Collection<DebitAccount> getDebits() {
-        return debits;
-    }
-
-    public void setDebits(Collection<DebitAccount> debits) {
-        this.debits = debits;
-    }
-
-    public Collection<CreditAccount> getCredits() {
-        return credits;
-    }
-
-    public void setCredits(Collection<CreditAccount> credits) {
-        this.credits = credits;
-    }
-
-    public Collection<CurrentAccount> getCurrents() {
-        return currents;
-    }
-
-    public void setCurrents(Collection<CurrentAccount> currents) {
-        this.currents = currents;
-    }
-
-
-    public DebitAccount getDebitAccount() {
-        return debitAccount;
-    }
-
-    public void setDebitAccount(DebitAccount debitAccount) {
-        this.debitAccount = debitAccount;
-    }
-
-    public CreditAccount getCreditAccount() {
-        return creditAccount;
-    }
-
-    public void setCreditAccount(CreditAccount creditAccount) {
-        this.creditAccount = creditAccount;
-    }
-
-    public CurrentAccount getCurrentAccount() {
-        return currentAccount;
-    }
-
-    public void setCurrentAccount(CurrentAccount currentAccount) {
-        this.currentAccount = currentAccount;
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
     }
 }
